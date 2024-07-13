@@ -2,6 +2,8 @@
 
 This project is a simple web application that converts between metric and imperial units. The main focus of this project was to implement a theme switcher and practice DOM manipulation using JavaScript.
 
+You can access the live version of the project [here](https://dynamicunitconverter.netlify.app/).
+
 ## Features
 
 - Converts between metric and imperial units for length, volume, and mass
