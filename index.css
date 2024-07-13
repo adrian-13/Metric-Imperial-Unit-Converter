@@ -17,7 +17,7 @@ body {
 #upper-section h1 {
   font-size: 28px;
   font-weight: bold;
-  padding: 33px 50px 20px 50px;
+  padding: 50px 50px 20px 50px;
 }
 
 #input-el {
@@ -166,4 +166,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Media query pre mobilné zariadenia */
+@media screen and (max-width: 600px) {
+  .group {
+    margin: 15px 10px; /* Menšie okraje na mobiloch */
+  }
+
+  .toggle-switch-container {
+    top: 5px;
+    right: 5px;
+  }
+
+  .toggle-label {
+    display: none; /* Skrytie textu na veľmi malých obrazovkách */
+  }
 }
