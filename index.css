@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 550px;
+  min-height: 730px;
+  background-color: #f4f4f4;
+  font-family: "Roboto", "Times New Roman", Times, serif;
+}
+
+#upper-section {
+  min-height: 285px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  text-align: center;
+}
+
+#upper-section h1 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 33px 50px 20px 50px;
+}
+
+#input-el {
+  margin: 0 auto; /* Zarovnanie na stred */
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #b295ff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 58px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  width: 120px; /* Dynamická šírka podľa obsahu */
+  transition: background-color 0.3s; /* Plynulý prechod farby pozadia */
+}
+
+#input-el:focus {
+  outline: none;
+}
+
+#input-el::placeholder {
+  color: #ffffff; /* Nastav farbu placeholderu podľa potreby */
+}
+
+#input-el::-webkit-outer-spin-button,
+#input-el::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#upper-section button {
+  margin: 30px;
+  padding: 10px;
+  width: 120px;
+  color: #7c3aed;
+  background-color: #ffffff;
+  border: 1px solid #7c3aed;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#upper-section button:active {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.group {
+  background-color: #ffffff;
+  margin: 30px 30px 30px 30px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.group h3 {
+  margin: 0px;
+  margin-top: 15px;
+  color: #5a537b;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.group p {
+  color: #353535;
+  font-size: 14px;
+}
+
+#change-color-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #7c3aed;
+  border: 1px solid #7c3aed;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+/* <--- Toggle Switch ---> */
+.toggle-switch-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1f2937;
+  border: 1px solid #ffffff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
